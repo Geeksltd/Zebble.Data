@@ -1,0 +1,9 @@
+namespace Zebble.Data.Services
+{
+    public interface IPhraseTranslation : IEntity
+    {
+        string Phrase { get; }
+        string Translation { get; }
+        ILanguage Language { get; }
+    }
+}

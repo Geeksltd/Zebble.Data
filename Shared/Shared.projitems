@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f413d304-3b87-4db8-90d1-84694155eca5</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Zebble.Plugin</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Icon.png" />
+    <None Include="$(MSBuildThisFileDirectory)%40NuGet\NuGet.nuspec" />
+    <None Include="$(MSBuildThisFileDirectory)%40NuGet\CreatePackage.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Authentication\IUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataProviderManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Ado.Net\DataAccessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Ado.Net\DataProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Ado.Net\DbTransactionScope.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Ado.Net\DbTransactionScopeOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Ado.Net\ITransactionScope.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Ado.Net\PropertySubqueryMapping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Ado.Net\SQLiteDataProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Ado.Net\SqlQueryBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\BinaryCriterion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Criterion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\DatabaseContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Database\Database.Count.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Database\Database.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Database\Database.Delete.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Database\Database.Find.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Database\Database.Get.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Database\Database.GetList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Database\Database.ProviderManagement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Database\Database.Save.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\Database\Database.Save.List.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\DirectDatabaseCriterion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\FilterFunction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\FullTextSearchQueryOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\ICriterion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\QueryOptions\PagingQueryOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\QueryOptions\QueryOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\QueryOptions\RangeQueryOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\QueryOptions\ResultSetSizeQueryOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\QueryOptions\SortQueryOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\SaveBehaviour.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\API\SaveEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engine\Cache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engine\DataProviderFactoryInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engine\ExpressionRunner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engine\IDataProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engine\IDataProviderFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\DiskDocumentStorageProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\Document.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentStorageProviderFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\IDocumentStorageProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntityExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Attributes\AutoNumberAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Attributes\CacheDependantAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Attributes\CacheObjectsAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Attributes\CalculatedAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Attributes\ManyToManyAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Attributes\SecureFileAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Attributes\SmallTableAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Attributes\TransientEntityAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\CachedReference.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Entity.T.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\EntityManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\GuidEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\IEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\IntEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globalization\ILanguage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globalization\IPhrase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globalization\TranslationDownloadedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globalization\TranslationRequestedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globalization\Translator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sorting\ISortable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sorting\Sorter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validation\ValidationException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validation\ValidationIssue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validation\ValidationResult.cs" />
+  </ItemGroup>
+</Project>
