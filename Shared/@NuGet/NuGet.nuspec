@@ -5,7 +5,7 @@
     <version>4.2.170</version>
     <title>SQL data for Zebble for Xamarin</title>
     <description>Provides entities and sql data support for Zebble for Xamarin.</description>
-    <iconUrl>https://raw.githubusercontent.com/{MyUserName}/{MyRepo}/.../Shared/Icon.png</iconUrl>
+    <iconUrl>https://github.com/Geeksltd/Zebble.Data/find/master</iconUrl>
     <authors>Mobile App Technologies Ltd</authors>
     <owners>Mobile App Technologies Ltd</owners>
     <projectUrl>https://github.com/Geeksltd/Zebble.Data</projectUrl>
@@ -32,8 +32,8 @@
 
   </metadata>
   <files>
-    <file src="..\lib\Zebble.Data.iOS.*" target="lib\Xamarin.iOS10\" />
-    <file src="..\lib\Zebble.Data.Android.*" target="lib\MonoAndroid10\" />
-    <file src="..\lib\Zebble.Data.UWP.*" target="lib\UAP10\" />
+    <file src="..\..\lib\Zebble.Data.iOS.*" target="lib\Xamarin.iOS10\" />
+    <file src="..\..\lib\Zebble.Data.Android.*" target="lib\MonoAndroid10\" />
+    <file src="..\..\lib\Zebble.Data.UWP.*" target="lib\UAP10\" />
   </files>
 </package>
