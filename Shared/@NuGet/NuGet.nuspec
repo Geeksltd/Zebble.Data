@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Zebble.Data</id>
-    <version>4.2.172</version>
+    <version>4.2.174</version>
     <title>SQL data for Zebble for Xamarin</title>
     <description>Provides entities and sql data support for Zebble for Xamarin.</description>
     <iconUrl>https://github.com/Geeksltd/Zebble.Data/blob/master/Shared/Icon.png</iconUrl>

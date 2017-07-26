@@ -11,7 +11,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Zebble.Data</RootNamespace>
-    <AssemblyName>Zebble.Data</AssemblyName>
+    <AssemblyName>Zebble.Data.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
