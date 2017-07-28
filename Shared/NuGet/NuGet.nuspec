@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Zebble.Data</id>
-    <version>4.2.174</version>
+    <version>4.2.182</version>
     <title>SQL data for Zebble for Xamarin</title>
     <description>Provides entities and sql data support for Zebble for Xamarin.</description>
     <iconUrl>https://github.com/Geeksltd/Zebble.Data/blob/master/Shared/Icon.png</iconUrl>
@@ -12,24 +12,22 @@
     <licenseUrl>http://zebble.net/Zebble%20-%20License%20Agreement.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <copyright>Copyright ©2017 Mobile App Technologies Ltd - All rights reserved.</copyright>
-
     <dependencies>
       <group targetFramework="UAP10">
-        <dependency id="System.Data.Common" version="4.3.0"/>
-        <dependency id="System.Data.SqlClient" version= "4.3.0"/>
+        <dependency id="System.Data.Common" version="4.3.0" />
+        <dependency id="System.Data.SqlClient" version="4.3.0" />
       </group>
       <group targetFramework="MonoAndroid">
-        <dependency id="Zebble" version= "4.0.240"/>
-        <dependency id="System.Data.Common" version="4.3.0"/>
+        <dependency id="Zebble" version="4.0.249"></dependency>
+        <dependency id="System.Data.Common" version="4.3.0" />
         <dependency id="Mono.Data.Sqlite.Portable" version="1.0.3.5" />
       </group>
       <group targetFramework="Xamarin.iOS10">
-        <dependency id="Zebble" version= "4.0.240"/>
-        <dependency id="System.Data.Common" version="4.3.0"/>
+        <dependency id="Zebble" version="4.0.249"></dependency>
+        <dependency id="System.Data.Common" version="4.3.0" />
         <dependency id="Mono.Data.Sqlite.Portable" version="1.0.3.5" />
       </group>
     </dependencies>
-
   </metadata>
   <files>
     <file src="..\..\lib\Zebble.Data.iOS.*" target="lib\Xamarin.iOS10\" />

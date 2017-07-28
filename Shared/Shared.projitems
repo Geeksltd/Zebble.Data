@@ -10,8 +10,10 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Icon.png" />
-    <None Include="$(MSBuildThisFileDirectory)%40NuGet\NuGet.nuspec" />
-    <None Include="$(MSBuildThisFileDirectory)%40NuGet\CreatePackage.bat" />
+    <None Include="$(MSBuildThisFileDirectory)NuGet\CreatePackage.bat" />
+    <None Include="$(MSBuildThisFileDirectory)NuGet\NuGet.exe" />
+    <None Include="$(MSBuildThisFileDirectory)NuGet\NuGet.nuspec" />
+    <None Include="$(MSBuildThisFileDirectory)NuGet\Zebble.Data.4.2.178.nupkg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Authentication\IUser.cs" />

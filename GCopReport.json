@@ -2,7 +2,7 @@
   "Items": [
     {
       "Analyzer": "UnusedMethodsAnalyzer",
-      "OccurrenceCount": 1531,
+      "OccurrenceCount": 1885,
       "Exceptions": null,
       "SentToServer": true,
       "InstallationName": "PAYMON"
