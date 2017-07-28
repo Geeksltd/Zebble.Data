@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Zebble.Data</id>
-    <version>4.2.182</version>
+    <version>4.2.183</version>
     <title>SQL data for Zebble for Xamarin</title>
     <description>Provides entities and sql data support for Zebble for Xamarin.</description>
     <iconUrl>https://github.com/Geeksltd/Zebble.Data/blob/master/Shared/Icon.png</iconUrl>
@@ -18,12 +18,10 @@
         <dependency id="System.Data.SqlClient" version="4.3.0" />
       </group>
       <group targetFramework="MonoAndroid">
-        <dependency id="Zebble" version="4.0.249"></dependency>
         <dependency id="System.Data.Common" version="4.3.0" />
         <dependency id="Mono.Data.Sqlite.Portable" version="1.0.3.5" />
       </group>
-      <group targetFramework="Xamarin.iOS10">
-        <dependency id="Zebble" version="4.0.249"></dependency>
+      <group targetFramework="Xamarin.iOS10">        
         <dependency id="System.Data.Common" version="4.3.0" />
         <dependency id="Mono.Data.Sqlite.Portable" version="1.0.3.5" />
       </group>

@@ -5,7 +5,6 @@
     "System.Data.Common": "4.3.0",
     "System.Data.SqlClient": "4.3.0",
     "System.Security.Cryptography.Algorithms": "4.3.0",
-    "System.Xml.XDocument": "4.3.0",
     "Zebble": "4.0.249"
   },
   "frameworks": {
