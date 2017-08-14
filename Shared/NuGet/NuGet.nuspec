@@ -3,12 +3,12 @@
   <metadata>
     <id>Zebble.Data</id>
     <version>4.2.184</version>
-    <title>SQLite data for Zebble for Xamarin</title>
-    <description>Provides entities and sql data support for Zebble for Xamarin.</description>
+    <title>SQLite data for Zebble (Xamarin)</title>
+    <description>Provides entities and sql data support for Zebble.</description>
     <iconUrl>https://raw.githubusercontent.com/Geeksltd/Zebble.Data/master/Shared/Icon.png</iconUrl>
     <projectUrl>https://github.com/Geeksltd/Zebble.Data</projectUrl>
-	<authors>Mobile App Technologies Ltd</authors>
-    <owners>Mobile App Technologies Ltd</owners>    
+    <authors>Mobile App Technologies Ltd</authors>
+    <owners>Mobile App Technologies Ltd</owners>
     <copyright>Copyright ©2017 Mobile App Technologies Ltd - All rights reserved.</copyright>
     <dependencies>
       <group targetFramework="UAP10">
@@ -19,7 +19,7 @@
         <dependency id="System.Data.Common" version="4.3.0" />
         <dependency id="Mono.Data.Sqlite.Portable" version="1.0.3.5" />
       </group>
-      <group targetFramework="Xamarin.iOS10">        
+      <group targetFramework="Xamarin.iOS10">
         <dependency id="System.Data.Common" version="4.3.0" />
         <dependency id="Mono.Data.Sqlite.Portable" version="1.0.3.5" />
       </group>
