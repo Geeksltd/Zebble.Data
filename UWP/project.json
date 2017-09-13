@@ -5,7 +5,7 @@
     "System.Data.Common": "4.3.0",
     "System.Data.SqlClient": "4.3.0",
     "System.Security.Cryptography.Algorithms": "4.3.0",
-    "Zebble": "4.2.341"
+    "Zebble": "4.2.342"
   },
   "frameworks": {
     "uap10.0": {}
@@ -19,6 +19,7 @@
     "win10-x64-aot": {}
   }
 }
+
 
 
 
