@@ -1,4 +1,4 @@
-[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.Data/master/Shared/NuGet/Icon.png "Zebble.Data"
+[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.Data/master/Shared/Icon.png "Zebble.Data"
 
 
 ## Zebble.Data
