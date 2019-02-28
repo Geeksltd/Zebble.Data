@@ -4,7 +4,8 @@ namespace Zebble.Data
     using Mono.Data.Sqlite;
     public abstract class SQLiteDataProvider : DataProvider<SqliteConnection, SqliteParameter> { }
     public class DataAccessor : DataAccessor<SqliteConnection> { }
-#else
+#endif
+#if UWP
     using Microsoft.Data.Sqlite;
     public abstract class SQLiteDataProvider : DataProvider<SqliteConnection, SqliteParameter> { }
     public class DataAccessor : DataAccessor<SqliteConnection> { }
