@@ -3,6 +3,7 @@ namespace Zebble.Data
     using System;
     using System.Linq;
     using System.Reflection;
+    using Olive;
 
     public class Setup
     {
@@ -10,7 +11,7 @@ namespace Zebble.Data
         {
             Database.RegisterDataProviderFactory(new DataProviderFactoryInfo
             {
-                Assembly = assembly ?? factoryType.GetAssembly(),
+                Assembly = assembly ?? factoryType.Assembly,
                 ConnectionString = DataAccessor.GetCurrentConnectionString(),
                 ProviderFactoryType = factoryType.AssemblyQualifiedName
             });

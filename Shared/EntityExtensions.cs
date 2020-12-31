@@ -4,6 +4,7 @@ namespace System
     using System.Collections.Generic;
     using System.Linq;
     using Zebble.Data;
+    using Olive;
 
     public static class ZebbleDataExtensions
     {
@@ -140,15 +141,15 @@ namespace System
         /// </summary>
         public static Type GetRootEntityType(this Type objectType)
         {
-            if (objectType.BaseType() == null)
+            if (objectType.BaseType == null)
                 throw new NotSupportedException(objectType.FullName + " not recognised. It must be a subclass of Zebble.Framework.Entity.");
 
-            if (objectType.BaseType().Name == "GuidEntity") return objectType;
-            if (objectType.BaseType() == typeof(Entity<int>)) return objectType;
-            if (objectType.BaseType() == typeof(Entity<long>)) return objectType;
-            if (objectType.BaseType() == typeof(Entity<string>)) return objectType;
+            if (objectType.BaseType.Name == "GuidEntity") return objectType;
+            if (objectType.BaseType == typeof(Entity<int>)) return objectType;
+            if (objectType.BaseType == typeof(Entity<long>)) return objectType;
+            if (objectType.BaseType == typeof(Entity<string>)) return objectType;
 
-            return GetRootEntityType(objectType.BaseType());
+            return GetRootEntityType(objectType.BaseType);
         }
     }
 }
