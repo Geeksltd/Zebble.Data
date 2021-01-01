@@ -1,21 +1,22 @@
 namespace Zebble.Data
 {
     using Newtonsoft.Json;
+    using Olive;
 
     public class Entity<T> : Entity, IEntity<T>
     {
         /// <summary>
         /// Gets or sets the ID of this object.
         /// </summary>
-        [Calculated]
+        [EscapeGCop]
         public virtual T ID { get; set; }
 
         /// <summary>
         /// Gets the original id of this type as it was in the database.
         /// </summary>
         [JsonIgnore]
-        [Calculated]
         [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+        [EscapeGCop]
         public virtual T OriginalId { get; internal set; }
 
         /// <summary>
