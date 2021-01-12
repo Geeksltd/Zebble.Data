@@ -4,8 +4,6 @@
     using System.Collections.Generic;
     using System.Data;
     using System.Linq;
-    using Zebble;
-    using Config = Zebble.Config;
     using Olive;
 
     /// <summary>
@@ -62,7 +60,7 @@
 
             command.Transaction = DbTransactionScope.Root?.GetDbTransaction() ?? command.Transaction;
 
-            command.CommandTimeout = DatabaseContext.Current?.CommandTimeout ?? (Config.TryGet<int?>("Sql.Command.TimeOut")) ?? command.CommandTimeout;
+            command.CommandTimeout = DatabaseContext.Current?.CommandTimeout ?? (Config.Get<int?>("Sql.Command.TimeOut")) ?? command.CommandTimeout;
 
             foreach (var param in @params) command.Parameters.Add(param);
 
@@ -91,7 +89,7 @@
                     .AddData("Parameters", @params.Get(l => l.Select(p => p.ParameterName + "=" + p.Value).ToString(" | ")))
                     .AddData("ConnectionString", dbCommand.Connection.ConnectionString);
 
-                Device.Log.Error(error);
+                Log.For<DataAccessor<TConnection>>().Error(error);
                 throw error;
             }
             finally
@@ -133,7 +131,7 @@
                         var error = new Exception("Error in executing SQL command.", ex).AddData("Command", c.Key)
                             .AddData("Parameters", c.Value.Get(l => l.Select(p => p.ParameterName + "=" + p.Value).ToString(" | ")));
 
-                        Device.Log.Error(error);
+                        Log.For<DataAccessor<TConnection>>().Error(error);
                         throw error;
                     }
                     finally
@@ -173,7 +171,7 @@
                     .AddData("Parameters", @params.Get(l => l.Select(p => p.ParameterName + "=" + p.Value).ToString(" | ")))
                     .AddData("ConnectionString", dbCommand.Connection.ConnectionString);
 
-                Device.Log.Error(error);
+                Log.For<DataAccessor<TConnection>>().Error(error);
                 throw error;
             }
             finally
@@ -209,7 +207,7 @@
                     .AddData("Parameters", @params.Get(l => l.Select(p => p.ParameterName + "=" + p.Value).ToString(" | ")))
                     .AddData("ConnectionString", dbCommand.Connection.ConnectionString);
 
-                Device.Log.Error(error);
+                Log.For<DataAccessor<TConnection>>().Error(error);
                 throw error;
             }
             finally

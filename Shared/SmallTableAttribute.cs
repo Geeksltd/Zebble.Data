@@ -2,6 +2,7 @@ namespace Zebble.Data
 {
     using System;
     using System.Collections.Generic;
+    using Olive;
 
     [AttributeUsage(AttributeTargets.Class)]
     public sealed class SmallTableAttribute : Attribute
