@@ -7,7 +7,7 @@
     <RootNamespace>Zebble</RootNamespace>
     <PackageId>Zebble.Data</PackageId>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <Version>4.2.199.0</Version>
+    <Version>4.2.200.0</Version>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
